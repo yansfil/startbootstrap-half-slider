@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
+<html lang="en"><head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Half Slider - Start Bootstrap Template</title>
+    <title>Tomorrance</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,16 +20,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation" onclick="openNav()">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+        <a class="navbar-brand" href="#">TOMORRANCE</a>
+        <div id="topnav">
+          <ul class="navbar-nav topnav-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -45,6 +40,26 @@
             </li>
           </ul>
         </div>
+
+        <div id="sidenav" class="sidenav" style="width: 0px;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <ul class="nav navbar-nav" role="menu" aria-labelledby="menu1">
+            <li class="dropdown-container">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My health</a>
+              <ul class="dropdown-menu forAnimate show" role="menu">
+                <li class="nav-item"><a href="javascript:void(0);" onclick="goFace();">- Face</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" onclick="goBody();">- Body</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-container">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Solution</a>
+              <ul class="dropdown-menu forAnimate" role="menu">
+                <li class="nav-item"><a href="#">- Exercise</a></li>
+                <li class="nav-item"><a href="#">- Food</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -52,29 +67,26 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+          <div class="carousel-item active" style="background-color:#2d2b2c">
+            <div class="carousel-container">
+              <div style="width: 300px;height: 300px;background-image:url(images/logo.png);background-size: 100% 100%;background-repeat: no-repeat;"></div>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+          <div class="carousel-item" style="background-color:#2d2b2c">
+            <div class="carousel-container">
+              <div style="width: 100px;height: 300px;background-image:url(images/background_second.png);background-size: 100% 100%;background-repeat: no-repeat;"></div>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+          <div class="carousel-item" style="background-color:#2d2b2c">
+            <div class="carousel-container">
+              <div style="width: 300px;height: 300px;background-image:url(images/background_third.png);background-size: 100% 100%;background-repeat: no-repeat;"></div>
             </div>
           </div>
         </div>
@@ -88,28 +100,115 @@
         </a>
       </div>
     </header>
+        <!-- Page Content -->
+        <section class="py-5">
+          <div id="body-container">
+        <div style="background-image:url(images/logo_nav.png);width: 30px;height: 30px;background-size: contain;background-repeat: no-repeat;background-position: center;/* display: table; */margin: 0 auto;">
+        </div>
+        <div>
+          <h3 style="
+          text-align: center;
+          font-size: 1.5rem;
+          margin-top: 10px;
+          color: b4b3b4;">
+          NO.  20180101
+          </h3>
+        </div>
+        <div style="background-image:url(images/main_3parts.png);width: 100%;height: 45%;background-size: contain;background-repeat: no-repeat;background-position: center;margin: 0 auto;margin-top: 50px;">
 
-    <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <h1>Half Slider by Start Bootstrap</h1>
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-          <code>half-slider.css</code>file.</p>
+        </div>
       </div>
-    </section>
+      </section>
+
+  <section class="info-size" style="position:relative;">
+    <a id="button-send" ><img src="images/btn_send.png" onclick="document.getElementById('modal-container').style.display='block'"/></a>
+    <div class="container" style="background-color:#3F403F">
+      <div class="row">
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">AGE</span></span>
+          <span class="col"><span class="item-value">27</span></span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">GENDER</span></span>
+          <span class="col"><span class="item-value">MALE</span></span>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">HEIGHT</span></span>
+          <span class="col"><span class="item-value">66.9 inch</span></span>
+        </div>
+        </div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">WEIGHT</span></span>
+          <span class="col"><span class="item-value">154.3 lbs</span></span>
+        </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">MUSCLE</span></span>
+          <span class="col"><span class="item-value">44.1 lbs</span></span>
+        </div>
+        </div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">FAT</span></span>
+          <span class="col"><span class="item-value">21.3 lbs</span></span>
+        </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-sm">
+          <div class="row">
+          <span class="col"><span class="item-name">BMI</span></span>
+          <span class="col"><span class="item-value">21.0 %</span></span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Yonsei University 50 Yonsei-ro Seodaemun-gu, Seoul 03722 Republic of Korea</p>
       </div>
       <!-- /.container -->
     </footer>
+    <div id="modal-container" class="modal">
+      <span onclick="document.getElementById('modal-container').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+          <label><b>We'll send your 3D body</b></label>
+          <input type="text" placeholder="Enter Email" name="uname" required>
+
+          <button type="button" onclick="document.getElementById('modal-container').style.display='none'" class="modal-button">Send</button>
+          <button type="button" onclick="document.getElementById('modal-container').style.display='none'" class="cancel-button">Cancel</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+
+        </div>
+      </form>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/half-slider.js"></script>
 
-  </body>
 
-</html>
+
+<whale translate="no"></whale>
+
+
+
+</body></html>
